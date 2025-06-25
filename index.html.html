@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_self">
+    <title>PBJ-Logissti | Building Materials Delivery & Removals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://files.catbox.moe/wsdpxu.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .material-card:hover {
+            transform: scale(1.03);
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        .facebook-btn:hover {
+            background-color: #4267B2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-orange-600 dark:text-orange-400">PBJ-Logissti</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">Services</a>
+                    <a href="#materials" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">Materials</a>
+                    <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">About</a>
+                    <a href="#reviews" class="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">Reviews</a>
+                    <button onclick="window.location.href='https://wa.me/27624170512'" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 dark:text-gray-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 pb-4 px-4">
+            <a href="#services" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">Services</a>
+            <a href="#materials" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">Materials</a>
+            <a href="#about" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">About</a>
+            <a href="#reviews" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition">Reviews</a>
+            <button onclick="window.location.href='https://wa.me/27624170512'" class="w-full mt-2 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white pt-24 pb-32 md:pt-32 md:pb-40 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Reliable Building Materials & Removals</h1>
+            <p class="text-xl md:text-2xl mb-8">Serving Cosmo City, Randburg and beyond with fast, affordable transport solutions</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="window.location.href='https://wa.me/27624170512'" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg font-medium transition flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Get a Quote
+                </button>
+                <button onclick="window.location.href='https://www.facebook.com/champion.moyo.2025?mibextid=rS40aB7S9Ucbxw6v'" class="facebook-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-medium transition flex items-center justify-center">
+                    <i class="fab fa-facebook-f mr-2 text-xl"></i> Message on Facebook
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Our Services</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-truck text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Short Distance Deliveries</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">Quick and efficient deliveries within Cosmo City, Randburg and surrounding areas. Perfect for urgent construction needs with same-day delivery options available.</p>
+                    <img src="https://files.catbox.moe/pbd45r.jpg" alt="Short distance delivery truck" class="mt-4 rounded-lg w-full h-48 object-cover">
+                </div>
+                
+                <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-road text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Long Distance Deliveries</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">We specialize in reliable long-distance building materials transport across South Africa. Our secure trucks ensure your materials arrive safely, no matter the distance.</p>
+                    <img src="https://files.catbox.moe/cc3kna.jpg" alt="Long distance delivery truck" class="mt-4 rounded-lg w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Building Materials Section -->
+    <section id="materials" class="py-16 px-4 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Our Services</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/twxvak.jpg" alt="Cement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Cement & Concrete</h3>
+                        <p class="text-gray-600 dark:text-gray-300">High-quality cement for all your construction needs. We deliver bulk cement for foundations, slabs, and structural work.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/im3q9q.jpg" alt="Roof Tiles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Roof Tiles</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Durable roof tiles in various styles and colors. We handle delicate materials with care during transport.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/pl3yo0.jpg" alt="Ceiling Boards" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Ceiling Boards</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Quality ceiling boards for interior finishing. We ensure they arrive undamaged and ready for installation.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/1t27gb.jpg" alt="Window Frames" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Window Frames</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Aluminum and wooden window frames delivered safely to your construction site or home.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/82gp2h.jpg" alt="Doors" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Doors</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Interior and exterior doors of all types. We handle them with care to prevent scratches or damage.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/863vd9.jpg" alt="Floor Tiles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Floor Tiles</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Ceramic, porcelain and natural stone tiles. We transport them securely to prevent breakage.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/uz28ex.jpg" alt="Door Frames" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Door Frames</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Sturdy door frames for all types of doors. We ensure they arrive straight and ready for installation.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://files.catbox.moe/mqtjir.jpg" alt="Removals Service" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Professional Removals</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Full-service removals for homes and businesses. Our experienced team handles your belongings with care, providing packing, loading, transport and unloading services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3">
+                    <img src="https://files.catbox.moe/xefxi7.jpg" alt="PBJ-Logissti Owner" class="rounded-lg shadow-lg w-full max-w-md mx-auto">
+                    <div class="mt-4 text-center">
+                        <button onclick="window.location.href='https://wa.me/27624170512'" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full text-md font-medium transition flex items-center justify-center mx-auto">
+                            <i class="fab fa-whatsapp mr-2"></i> Contact Me for Prices
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white">About PBJ-Logissti</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Based in Cosmo City, Randburg, PBJ-Logissti has been providing reliable building materials delivery and removals services to contractors, builders, and homeowners throughout South Africa.</p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">We understand the importance of timely deliveries in construction projects and stress-free moves, which is why we've built our reputation on dependable service and competitive pricing.</p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">Whether you need materials delivered across town, across the country, or require professional moving services, our fleet of well-maintained trucks and experienced team ensure everything arrives safely and on schedule.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-orange-100 dark:bg-gray-700 p-4 rounded-lg">
+                            <h3 class="font-semibold text-orange-600 dark:text-orange-400 mb-2">Our Location</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Cosmo City, Randburg<br>South Africa</p>
+                        </div>
+                        <div class="bg-orange-100 dark:bg-gray-700 p-4 rounded-lg">
+                            <h3 class="font-semibold text-orange-600 dark:text-orange-400 mb-2">Contact Info</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Phone: +27 62 417 0512<br>Email: Championmoyo59@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 px-4 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">What Our Customers Say</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="review-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://files.catbox.moe/6ps7fm.jpg" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-white">Thabo M.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">"PBJ-Logissti delivered bricks to my construction site in Pretoria on time despite the long distance. Their prices are fair and service is excellent."</p>
+                </div>
+                
+                <div class="review-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-white">Lerato K.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">"I needed cement delivered urgently for my home renovation. PBJ-Logissti responded quickly and had it at my doorstep within hours. Highly recommended!"</p>
+                </div>
+                
+                <div class="review-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-white">Sipho D.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">"As a contractor, I rely on PBJ-Logissti for regular deliveries to my job sites. They're reliable and their drivers are professional. Good service all around."</p>
+                </div>
+                
+                <div class="review-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://files.catbox.moe/2f5g7w.jpg" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-white">Nomsa P.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">"The team at PBJ-Logissti helped me transport roofing materials from Johannesburg to Durban. Everything arrived in perfect condition. Will use them again."</p>
+                </div>
+                
+                <div class="review-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://files.catbox.moe/zdw5sm.jpg" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-white">Tebogo M.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">"Excellent communication throughout the delivery process. They kept me updated on the status of my sand delivery, which arrived exactly when promised."</p>
+                </div>
+                
+                <div class="review-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://files.catbox.moe/x66cjm.jpg" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-white">Mandla S.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">"Good service overall. Had a small delay with one delivery but they communicated well and made up for it. Prices are better than other companies I've used."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-orange-600 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Get Your Materials Delivered or Need Removals?</h2>
+            <p class="text-xl mb-8">Contact us today for a quote or more information about our services</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="window.location.href='https://wa.me/27624170512'" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg font-medium transition flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> WhatsApp Us
+                </button>
+                <button onclick="window.location.href='https://www.facebook.com/champion.moyo.2025?mibextid=rS40aB7S9Ucbxw6v'" class="facebook-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-medium transition flex items-center justify-center">
+                    <i class="fab fa-facebook-f mr-2 text-xl"></i> Message on Facebook
+                </button>
+                <button onclick="window.location.href='tel:+27624170512'" class="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-full text-lg font-medium transition flex items-center justify-center">
+                    <i class="fas fa-phone mr-2 text-xl"></i> Call Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PBJ-Logissti</h3>
+                    <p class="text-gray-400">Reliable building materials delivery and removals services in Cosmo City, Randburg and throughout South Africa.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#materials" class="text-gray-400 hover:text-white transition">Materials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white transition">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-phone mr-2"></i> +27 62 417 0512</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-envelope mr-2"></i> Championmoyo59@gmail.com</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i> Cosmo City, Randburg, South Africa</li>
+                        <li class="flex items-center">
+                            <a href="https://wa.me/27624170512" class="text-gray-400 hover:text-white transition mr-4"><i class="fab fa-whatsapp text-xl"></i></a>
+                            <a href="https://www.facebook.com/champion.moyo.2025?mibextid=rS40aB7S9Ucbxw6v" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 PBJ-Logissti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Handle all anchor clicks with JavaScript
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Dark/light mode based on system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+</html>
